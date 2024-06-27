@@ -33,25 +33,27 @@ const RandomColor = () => {
     }
     console.log(hexColor);
     setColor(hexColor);
+    setTypeOfColor("hex")
   };
   const handleCreateRandomRgbColor = () => {
     const r = randomColorUtility(256);
     const g = randomColorUtility(256);
     const b = randomColorUtility(256);
 
-    setColor(`rgb${r}, ${g}, ${b}`);
+    setColor(`rgb(${r}, ${g}, ${b})`);
+    setTypeOfColor("rgb");
   };
 
   return (
     <div className="w-screen h-screen pt-3" style={{ background: color }}>
       <button
-        onClick={() => setTypeOfColor("hex")}
+        onClick={()=>handleCreateRandomHexColor()}
         className="inline-flex items-center rounded-md bg-white px-3 py-3 ml-5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
       >
         Create HEX Color
       </button>
       <button
-        onClick={() => setTypeOfColor("rgb")}
+        onClick={()=>handleCreateRandomRgbColor()}
         className="inline-flex items-center rounded-md bg-white px-3 py-3 ml-5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
       >
         Create RGB Color
@@ -59,15 +61,16 @@ const RandomColor = () => {
       <button
         onClick={
           typeOfColor === "hex"
-            ? handleCreateRandomHexColor
-            : handleCreateRandomRgbColor
+            ? handleCreateRandomRgbColor
+            : handleCreateRandomHexColor
+          
         }
         className="inline-flex items-center rounded-md bg-white px-3 py-3 ml-5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
       >
         Create Random Color
       </button>
       <div className="flex justify-center">
-        <h3>{typeOfColor === "rgb" ? "RGB color" : "HEX color"}</h3>
+        <h3>{typeOfColor === "rgb" ? "RGB color " : "HEX color "}</h3>
         <h1>{color}</h1>
       </div>
     </div>
