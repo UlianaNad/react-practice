@@ -19,8 +19,8 @@ const LoadMoreButton = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `https://dummyjson.com/recipes?limit=10&skip=${
-          count === 0 ? 0 : count * 10
+        `https://dummyjson.com/recipes?limit=12&skip=${
+          count === 0 ? 0 : count * 12
         }`
       ).then((res) => res.json());
 
@@ -28,7 +28,7 @@ const LoadMoreButton = () => {
         setRecipes((prevData) => [...prevData, ...response.recipes]);
         setLoading(false);
       }
-      console.log(response);
+      
     } catch (error) {
       console.log(error);
       setLoading(false);
@@ -64,7 +64,7 @@ const LoadMoreButton = () => {
                 className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7 group"
               >
                 <h3 className="mt-4 text-sm text-gray-700">
-                  {recipe.name}, {recipe.id}
+                  {recipe.name}
                 </h3>
                 <img
                   src={recipe.image}
