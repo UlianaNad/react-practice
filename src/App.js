@@ -1,6 +1,7 @@
 import './App.css';
 import Accordion from './components/Accordion';
 import ImageSlider from './components/ImageSlider/ImageSlider';
+import LightDarkMode from './components/LightDarkMode/LightDarkMode';
 import LoadMoreButton from './components/LoadeMoreButton/LoadMoreButton';
 import QRcodeGenerator from './components/QRcodeGenerator/QRcodeGenerator';
 import RandomColor from './components/RandomColor';
@@ -17,7 +18,8 @@ function App() {
       <ImageSlider url={'https://picsum.photos/v2/list'} limit={6} page={2}/> */}
       {/* <LoadMoreButton/> */}
       {/* <TreeView menus={menus}/> */}
-      <QRcodeGenerator/>
+      {/* <QRcodeGenerator/> */}
+      <LightDarkMode/>
     </div>
   );
 }
