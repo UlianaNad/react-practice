@@ -6,7 +6,7 @@ const TreeView = ({menus =[]}) => {
 
 
   return (
-    <div className='container'>
+    <div className='bg-blue-700 min-h-screen w-80'>
         <MenuList list={menus}/>
     </div>
   )
