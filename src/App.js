@@ -1,5 +1,6 @@
 import './App.css';
 import Accordion from './components/Accordion';
+import CustomScrollIndicator from './components/CustomScrollIndicator/CustomScrollIndicator';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import LightDarkMode from './components/LightDarkMode/LightDarkMode';
 import LoadMoreButton from './components/LoadeMoreButton/LoadMoreButton';
@@ -19,7 +20,8 @@ function App() {
       {/* <LoadMoreButton/> */}
       {/* <TreeView menus={menus}/> */}
       {/* <QRcodeGenerator/> */}
-      <LightDarkMode/>
+      {/* <LightDarkMode/> */}
+      <CustomScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
     </div>
   );
 }
