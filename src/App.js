@@ -1,6 +1,7 @@
 import './App.css';
 import Accordion from './components/Accordion';
 import CustomScrollIndicator from './components/CustomScrollIndicator/CustomScrollIndicator';
+import GithubProfileFinder from './components/GithubProfileFinder/GithubProfileFinder';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import LightDarkMode from './components/LightDarkMode/LightDarkMode';
 import LoadMoreButton from './components/LoadeMoreButton/LoadMoreButton';
@@ -26,7 +27,8 @@ function App() {
       {/* <LightDarkMode/> */}
       {/* <CustomScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
       {/* <TabTest/> */}
-      <ModalPopup/>
+      {/* <ModalPopup/> */}
+      <GithubProfileFinder/>
     </div>
   );
 }
