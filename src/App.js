@@ -4,9 +4,12 @@ import CustomScrollIndicator from './components/CustomScrollIndicator/CustomScro
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import LightDarkMode from './components/LightDarkMode/LightDarkMode';
 import LoadMoreButton from './components/LoadeMoreButton/LoadMoreButton';
+import ModalPopup from './components/ModalPopup/ModalPopup';
 import QRcodeGenerator from './components/QRcodeGenerator/QRcodeGenerator';
 import RandomColor from './components/RandomColor';
 import StarRate from './components/StarRate/StarRate';
+import TabTest from './components/Tabs/TabTest';
+import Tabs from './components/Tabs/Tabs';
 import TreeView from './components/TreeView/TreeView';
 import menus from './components/TreeView/data';
 
@@ -21,7 +24,9 @@ function App() {
       {/* <TreeView menus={menus}/> */}
       {/* <QRcodeGenerator/> */}
       {/* <LightDarkMode/> */}
-      <CustomScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
+      {/* <CustomScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
+      {/* <TabTest/> */}
+      <ModalPopup/>
     </div>
   );
 }
