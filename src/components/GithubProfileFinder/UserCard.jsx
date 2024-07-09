@@ -4,7 +4,6 @@ const UserCard = ({ user }) => {
   const {
     avatar_url,
     followers,
-    following,
     location,
     name,
     html_url,

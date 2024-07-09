@@ -1,5 +1,6 @@
 import './App.css';
 import Accordion from './components/Accordion';
+import AutocompleteSearch from './components/AutocompleteSearch/AutocompleteSearch';
 import CustomScrollIndicator from './components/CustomScrollIndicator/CustomScrollIndicator';
 import GithubProfileFinder from './components/GithubProfileFinder/GithubProfileFinder';
 import ImageSlider from './components/ImageSlider/ImageSlider';
@@ -28,7 +29,8 @@ function App() {
       {/* <CustomScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
       {/* <TabTest/> */}
       {/* <ModalPopup/> */}
-      <GithubProfileFinder/>
+      {/* <GithubProfileFinder/> */}
+      <AutocompleteSearch/>
     </div>
   );
 }
