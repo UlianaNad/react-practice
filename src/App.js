@@ -12,6 +12,7 @@ import RandomColor from './components/RandomColor';
 import StarRate from './components/StarRate/StarRate';
 import TabTest from './components/Tabs/TabTest';
 import Tabs from './components/Tabs/Tabs';
+import TikTactToe from './components/TikTactToe/TikTactToe';
 import TreeView from './components/TreeView/TreeView';
 import menus from './components/TreeView/data';
 
@@ -30,7 +31,8 @@ function App() {
       {/* <TabTest/> */}
       {/* <ModalPopup/> */}
       {/* <GithubProfileFinder/> */}
-      <AutocompleteSearch/>
+      {/* <AutocompleteSearch/> */}
+      <TikTactToe/>
     </div>
   );
 }
