@@ -16,7 +16,7 @@ const GithubProfileFinder = () => {
       setLoading(true);
       const response = await fetch(`https://api.github.com/users/${userName}`);
       const data = await response.json();
-      console.log(data);
+      
       if (data) {
         setLoading(false);
         setUserData(data);
@@ -42,7 +42,6 @@ const GithubProfileFinder = () => {
           type="text"
           name="search-by-username"
           onChange={(e) => setUserName(e.target.value)}
-          value={userName}
           placeholder="Search user ..."
           className="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 mb-4 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
         />
