@@ -5,6 +5,7 @@ import CustomScrollIndicator from './components/CustomScrollIndicator/CustomScro
 import FeatureFlag from './components/FeatureFlag/FeatureFlag';
 import FeatureFlagGlodbalState from './components/FeatureFlag/context';
 import GithubProfileFinder from './components/GithubProfileFinder/GithubProfileFinder';
+import UseFetchHookTest from './components/Hooks/UseFetch/test';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import LightDarkMode from './components/LightDarkMode/LightDarkMode';
 import LoadMoreButton from './components/LoadeMoreButton/LoadMoreButton';
@@ -34,9 +35,10 @@ function App() {
       <GithubProfileFinder/>
       <AutocompleteSearch/>
       <TikTactToe/> */}
-      <FeatureFlagGlodbalState>
+      {/* <FeatureFlagGlodbalState>
         <FeatureFlag/>
-      </FeatureFlagGlodbalState>
+      </FeatureFlagGlodbalState> */}
+      <UseFetchHookTest/>
     </div>
   );
 }
