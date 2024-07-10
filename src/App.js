@@ -2,6 +2,8 @@ import './App.css';
 import Accordion from './components/Accordion';
 import AutocompleteSearch from './components/AutocompleteSearch/AutocompleteSearch';
 import CustomScrollIndicator from './components/CustomScrollIndicator/CustomScrollIndicator';
+import FeatureFlag from './components/FeatureFlag/FeatureFlag';
+import FeatureFlagGlodbalState from './components/FeatureFlag/context';
 import GithubProfileFinder from './components/GithubProfileFinder/GithubProfileFinder';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import LightDarkMode from './components/LightDarkMode/LightDarkMode';
@@ -18,7 +20,7 @@ import menus from './components/TreeView/data';
 function App() {
   return (
     <div className="App">
-      <Accordion />
+      {/* <Accordion />
       <RandomColor/>
       <StarRate numberOfStars={10}/>
       <ImageSlider url={'https://picsum.photos/v2/list'} limit={6} page={2}/> 
@@ -31,7 +33,10 @@ function App() {
       <ModalPopup/>
       <GithubProfileFinder/>
       <AutocompleteSearch/>
-      <TikTactToe/>
+      <TikTactToe/> */}
+      <FeatureFlagGlodbalState>
+        <FeatureFlag/>
+      </FeatureFlagGlodbalState>
     </div>
   );
 }
