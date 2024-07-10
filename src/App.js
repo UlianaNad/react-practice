@@ -11,7 +11,6 @@ import QRcodeGenerator from './components/QRcodeGenerator/QRcodeGenerator';
 import RandomColor from './components/RandomColor';
 import StarRate from './components/StarRate/StarRate';
 import TabTest from './components/Tabs/TabTest';
-import Tabs from './components/Tabs/Tabs';
 import TikTactToe from './components/TikTactToe/TikTactToe';
 import TreeView from './components/TreeView/TreeView';
 import menus from './components/TreeView/data';
@@ -19,19 +18,19 @@ import menus from './components/TreeView/data';
 function App() {
   return (
     <div className="App">
-      {/* <Accordion />
+      <Accordion />
       <RandomColor/>
       <StarRate numberOfStars={10}/>
-      <ImageSlider url={'https://picsum.photos/v2/list'} limit={6} page={2}/> */}
-      {/* <LoadMoreButton/> */}
-      {/* <TreeView menus={menus}/> */}
-      {/* <QRcodeGenerator/> */}
-      {/* <LightDarkMode/> */}
-      {/* <CustomScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
-      {/* <TabTest/> */}
-      {/* <ModalPopup/> */}
-      {/* <GithubProfileFinder/> */}
-      {/* <AutocompleteSearch/> */}
+      <ImageSlider url={'https://picsum.photos/v2/list'} limit={6} page={2}/> 
+      <LoadMoreButton/>
+      <TreeView menus={menus}/>
+      <QRcodeGenerator/>
+      <LightDarkMode/>
+      <CustomScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
+      <TabTest/>
+      <ModalPopup/>
+      <GithubProfileFinder/>
+      <AutocompleteSearch/>
       <TikTactToe/>
     </div>
   );
