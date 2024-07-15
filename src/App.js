@@ -5,6 +5,7 @@ import CustomScrollIndicator from './components/CustomScrollIndicator/CustomScro
 import FeatureFlag from './components/FeatureFlag/FeatureFlag';
 import FeatureFlagGlodbalState from './components/FeatureFlag/context';
 import GithubProfileFinder from './components/GithubProfileFinder/GithubProfileFinder';
+import UseOnClickOutsideTest from './components/Hooks/UseClickOutside/test';
 import UseFetchHookTest from './components/Hooks/UseFetch/test';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import LightDarkMode from './components/LightDarkMode/LightDarkMode';
@@ -38,7 +39,8 @@ function App() {
       {/* <FeatureFlagGlodbalState>
         <FeatureFlag/>
       </FeatureFlagGlodbalState> */}
-      <UseFetchHookTest/>
+      {/* <UseFetchHookTest/> */}
+      <UseOnClickOutsideTest/>
     </div>
   );
 }
