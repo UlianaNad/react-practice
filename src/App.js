@@ -14,6 +14,7 @@ import LoadMoreButton from './components/LoadeMoreButton/LoadMoreButton';
 import ModalPopup from './components/ModalPopup/ModalPopup';
 import QRcodeGenerator from './components/QRcodeGenerator/QRcodeGenerator';
 import RandomColor from './components/RandomColor';
+import ScrollToSection from './components/ScrollToTopAndBottom/ScrollToSection';
 import ScrollToTopAndBottom from './components/ScrollToTopAndBottom/ScrollToTopAndBottom';
 import StarRate from './components/StarRate/StarRate';
 import TabTest from './components/Tabs/TabTest';
@@ -44,7 +45,8 @@ function App() {
       {/* <UseFetchHookTest/> */}
       {/* <UseOnClickOutsideTest/> */}
       {/* <UseWindowResizeTest/> */}
-      {<ScrollToTopAndBottom/>}
+      {/* {<ScrollToTopAndBottom/>} */}
+      <ScrollToSection/>
     </div>
   );
 }
