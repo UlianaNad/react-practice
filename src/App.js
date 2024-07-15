@@ -7,6 +7,7 @@ import FeatureFlagGlodbalState from './components/FeatureFlag/context';
 import GithubProfileFinder from './components/GithubProfileFinder/GithubProfileFinder';
 import UseOnClickOutsideTest from './components/Hooks/UseClickOutside/test';
 import UseFetchHookTest from './components/Hooks/UseFetch/test';
+import UseWindowResizeTest from './components/Hooks/UseResponsive/test';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import LightDarkMode from './components/LightDarkMode/LightDarkMode';
 import LoadMoreButton from './components/LoadeMoreButton/LoadMoreButton';
@@ -40,7 +41,8 @@ function App() {
         <FeatureFlag/>
       </FeatureFlagGlodbalState> */}
       {/* <UseFetchHookTest/> */}
-      <UseOnClickOutsideTest/>
+      {/* <UseOnClickOutsideTest/> */}
+      <UseWindowResizeTest/>
     </div>
   );
 }
